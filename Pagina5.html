@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Menu de Navegação (Fixo no topo) -->
+  <nav class="navbar navbar-expand-lg bg-dark-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Petto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> 
+              <span class="text-pt">Início</span>
+              <span class="text-en hidden">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="painel.php"><i class="fas fa-syringe"></i> 
+              <span class="text-pt">Vacinação</span>
+              <span class="text-en hidden">Vaccination</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina5.html"><i class="fas fa-phone"></i> 
+              <span class="text-pt">Contato</span>
+              <span class="text-en hidden">Contact</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php"><i class="fas fa-sign-in-alt"></i> 
+              <span class="text-pt">Entrar</span>
+              <span class="text-en hidden">Login</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.php"><i class="fas fa-user-plus"></i> 
+              <span class="text-pt">Cadastrar-se</span>
+              <span class="text-en hidden">Sign Up</span>
+            </a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-light ms-3" id="langToggle">Alternar Idioma</button>
+      </div>
+    </div>
+  </nav>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+
+  <!-- Conteúdo -->
+  <!-- Seção de Contato Melhorada -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center text-uppercase mb-4">
+        <span class="text-pt">Fale Conosco</span>
+        <span class="text-en hidden">Contact Us</span>
+      </h2>
+      <p class="text-center text-muted mb-5">
+        <span class="text-pt">Entre em contato conosco preenchendo o formulário abaixo ou pelas nossas redes sociais.</span>
+        <span class="text-en hidden">Get in touch with us by filling out the form below or through our social media.</span>
+      </p>
+
+      <div class="row">
+        <!-- Formulário de Contato -->
+        <div class="col-md-6 mb-4">
+          <form>
+            <div class="mb-4">
+              <label for="nome" class="form-label"><span class="text-pt">Nome</span><span class="text-en hidden">Name</span></label>
+              <input type="text" class="form-control border-dark shadow-sm" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="form-label"><span class="text-pt">E-mail</span><span class="text-en hidden">E-mail</span></label>
+              <input type="email" class="form-control border-dark shadow-sm" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="mb-4">
+              <label for="telefone" class="form-label"><span class="text-pt">Telefone</span><span class="text-en hidden">Phone</span></label>
+              <input type="tel" class="form-control border-dark shadow-sm" id="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div class="mb-4">
+              <label for="mensagem" class="form-label"><span class="text-pt">Mensagem</span><span class="text-en hidden">Message</span></label>
+              <textarea class="form-control border-dark shadow-sm" id="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-dark btn-lg px-5 py-2 shadow-lg">
+                <span class="text-pt">Enviar Mensagem</span>
+                <span class="text-en hidden">Send Message</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Informações de Contato e Redes Sociais -->
+        <div class="col-md-6 mb-4">
+          <div class="p-4 bg-white shadow rounded">
+            <h5 class="mb-3 text-uppercase">
+              <span class="text-pt">Informações de Contato</span>
+              <span class="text-en hidden">Contact Information</span>
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:contato@petto.com.br" class="text-dark text-decoration-none">contato@petto.com.br</a>
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone me-2"></i>
+                <a href="tel:+551199144-4959" class="text-dark text-decoration-none">+55 11 99144-4959</a>
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <span class="text-pt">Rua Eleodora Cintra, 45 - São Paulo</span>
+                <span class="text-en hidden">Rua Eleodora Cintra, 45 - São Paulo</span>
+              </span>
+              </li>
+            </ul>
+
+            <h5 class="text-uppercase mt-4">
+              <span class="text-pt">Siga-nos nas Redes Sociais</span>
+              <span class="text-en hidden">Follow Us on Social Media</span>
+            </h5>
+            <div class="d-flex justify-content-start align-items-center mt-3">
+              <a href="#" class="text-dark me-3 social-icon">
+                <i class="fab fa-facebook-f fa-lg"></i>
+              </a>
+              <a href="#" class="text-dark me-3 social-icon">
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
+              <a href="#" class="text-dark me-3 social-icon">
+                <i class="fab fa-twitter fa-lg"></i>
+              </a>
+              <a href="#" class="text-dark me-3 social-icon">
+                <i class="fab fa-linkedin-in fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Seção do Rodapé -->
+  <footer class="bg-dark text-white pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Seção de Serviços -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">
+            <span class="text-pt">Nossos Serviços</span>
+            <span class="text-en hidden">Our Services</span>
+          </h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">
+              <span class="text-pt">Carteira Digital de Vacinação</span>
+              <span class="text-en hidden">Digital Vaccination Card</span>
+            </a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+              <span class="text-pt">Serviço de Dogwalk</span>
+              <span class="text-en hidden">Dog Walking Service</span>
+            </a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+              <span class="text-pt">Consultoria de Saúde Pet</span>
+              <span class="text-en hidden">Pet Health Consultancy</span>
+            </a></li>
+          </ul>
+        </div>
+
+        <!-- Seção de Contato -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">
+            <span class="text-pt">Contato</span>
+            <span class="text-en hidden">Contact</span>
+          </h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope me-2"></i>
+              <a href="mailto:contato@petto.com.br" class="text-white text-decoration-none">contato@petto.com.br</a>
+            </li>
+            <li><i class="fas fa-phone me-2"></i>
+              <a href="tel:+551199144-4959" class="text-white text-decoration-none">+55 11 99144-4959</a>
+            </li>
+            <li><i class="fas fa-map-marker-alt me-2"></i>
+              <span class="text-pt">Rua Eleodora Cintra, 45 - São Paulo</span>
+              <span class="text-en hidden">Rua Eleodora Cintra, 45 - São Paulo</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Seção de Redes Sociais -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">
+            <span class="text-pt">Siga-nos</span>
+            <span class="text-en hidden">Follow Us</span>
+          </h5>
+          <div class="d-flex">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divisor -->
+      <hr class="border border-light opacity-25">
+      
+      <!-- Seção Inferior -->
+      <div class="row">
+        <div class="col text-center">
+          <p class="mb-0">
+            <span class="text-pt">&copy; 2024 Petto - Todos os direitos reservados.</span>
+            <span class="text-en hidden">&copy; 2024 Petto - All rights reserved.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
