@@ -17,7 +17,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -58,6 +58,28 @@
               <span class="text-en hidden">Sign Up</span>
               <span class="text-es hidden">Registrarse</span>
             </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="text-pt">Acessibilidade</span>
+              <span class="text-en hidden">Accessibility</span>
+              <span class="text-es hidden">Accesibilidad</span>
+            </a>
+            <ul class="dropdown-menu" id="acessibilidadeMenu">
+              <li>
+                <a class="dropdown-item" href="#" onclick="alterarTamanhoTexto(1.1); event.stopPropagation();">A+</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="alterarTamanhoTexto(0.9); event.stopPropagation();">A-</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Outra opção</a>
+              </li>
+            </ul>
           </li>
         </ul>
 
@@ -111,9 +133,24 @@
         </p>
 
         <ul class="list-unstyled">
-          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Serviços de Dogwalk com horários flexíveis</span><span class="text-en hidden">Dog walking services with flexible hours</span><span class="text-es hidden">Servicios de paseo para perros con horarios flexibles</span></li>
-          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Carteira de vacinação digital para facilitar o acompanhamento</span><span class="text-en hidden">Digital vaccination card for easy tracking</span><span class="text-es hidden">Cartilla de vacunación digital para un mejor seguimiento</span></li>
-          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Consultoria especializada em saúde pet</span><span class="text-en hidden">Specialized pet health consulting</span><span class="text-es hidden">Consultoría especializada en salud para mascotas</span></li>
+          <li>
+            <i class="fas fa-check-circle text-success me-2"></i>
+            <span class="text-pt">Serviços de Dogwalk com horários flexíveis</span>
+            <span class="text-en hidden">Dog walking services with flexible hours</span>
+            <span class="text-es hidden">Servicios de paseo para perros con horarios flexibles</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle text-success me-2"></i>
+            <span class="text-pt">Carteira de vacinação digital para facilitar o acompanhamento</span>
+            <span class="text-en hidden">Digital vaccination card for easy tracking</span>
+            <span class="text-es hidden">Cartilla de vacunación digital para un mejor seguimiento</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle text-success me-2"></i>
+            <span class="text-pt">Consultoria especializada em saúde pet</span>
+            <span class="text-en hidden">Specialized pet health consulting</span>
+            <span class="text-es hidden">Consultoría especializada en salud para mascotas</span>
+          </li>
         </ul>
 
         <a href="" class="btn btn-dark ms-3">
