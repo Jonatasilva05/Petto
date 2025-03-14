@@ -79,7 +79,7 @@ if (localStorage.getItem('dark-mode') === 'true') {
 updateButtonText();
 
 // ADICIONA EVENTO PARA ALTERNAR ENTRE O MODO ESCURO E O MODO CLARO
-toggleButton.addEventListener('click', () => {
+modoEscuro.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     
     // SALVA A ESCOLHA DO USUARIO EM LocalStorage, OU SEJA, "ARMAZENA" EM localStorage PARA MANTER A PREFERÊNCIA DO USUARIO
