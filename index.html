@@ -17,49 +17,76 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html"><i class="fas fa-home"></i> 
               <span class="text-pt">Início</span>
               <span class="text-en hidden">Home</span>
+              <span class="text-es hidden">Inicio</span>
             </a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="painel.php"><i class="fas fa-syringe"></i> 
               <span class="text-pt">Vacinação</span>
               <span class="text-en hidden">Vaccination</span>
+              <span class="text-es hidden">Vacunación</span>
             </a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="Pagina5.html"><i class="fas fa-phone"></i> 
               <span class="text-pt">Contato</span>
               <span class="text-en hidden">Contact</span>
+              <span class="text-es hidden">Contacto</span>              
             </a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="index.php"><i class="fas fa-sign-in-alt"></i> 
               <span class="text-pt">Entrar</span>
               <span class="text-en hidden">Login</span>
+              <span class="text-es hidden">Iniciar sesión</span>
             </a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="register.php"><i class="fas fa-user-plus"></i> 
               <span class="text-pt">Cadastrar-se</span>
               <span class="text-en hidden">Sign Up</span>
+              <span class="text-es hidden">Registrarse</span>
             </a>
           </li>
         </ul>
-        <button class="btn btn-outline-light ms-3" id="langToggle">Alternar Idioma</button>
+
+        <!-- Botão da Bandeira(flag) dos Estados Unidos (idioma Inglês-Americano)-->
+        <button class="btn btn-outline-light ms-3" id="toggleEn">
+          <img src="./img/bandeiras/flagEUA.jpg" id="flagEn" alt="Bandeira dos EUA">
+        </button>
+      
+        <!-- Botão da Bandeira(flag) da Espanha (idioma Espanhol) -->
+        <button class="btn btn-outline-light ms-3" id="toggleEs">
+          <img src="./img/bandeiras/flagEspanha.jpg" id="flagEs" alt="Bandeira da Espanha">
+        </button>
+      
+        <!-- Botão da Bandeira(flag) do Brasil (idioma Português-Brasil) -->
+        <button class="btn btn-outline-light ms-3" id="togglePt" style="display: none;">
+          <img src="./img/bandeiras/flagBrasil.jpg" id="flagPt" alt="Bandeira do Brasil">
+        </button>
+
       </div>
     </div>
   </nav>
+
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
+  
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
@@ -74,25 +101,33 @@
         <h2 class="text-uppercase mb-3">
           <span class="text-pt">Bem-vindo à Petto</span>
           <span class="text-en hidden">Welcome to Petto</span>
+          <span class="text-es hidden">¡Bienvenido a Petto!</span>
         </h2>
+
         <p>
           <span class="text-pt">A Petto oferece uma gama de serviços que garantem o bem-estar do seu animal de estimação, desde passeios com cães até vacinação e consultoria de saúde. Nosso objetivo é cuidar do seu pet com amor e dedicação.</span>
           <span class="text-en hidden">Petto offers a range of services that ensure the well-being of your pet, from dog walking to vaccination and health consulting. Our goal is to care for your pet with love and dedication.</span>
+          <span class="text-es hidden">Petto ofrece una gama de servicios que garantizan el bienestar de tu mascota, desde paseos para perros hasta vacunación y consultoría de salud. Nuestro objetivo es cuidar de tu mascota con amor y dedicación.</span>
         </p>
+
         <ul class="list-unstyled">
-          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Serviços de Dogwalk com horários flexíveis</span><span class="text-en hidden">Dog walking services with flexible hours</span></li>
-          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Carteira de vacinação digital para facilitar o acompanhamento</span><span class="text-en hidden">Digital vaccination card for easy tracking</span></li>
-          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Consultoria especializada em saúde pet</span><span class="text-en hidden">Specialized pet health consulting</span></li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Serviços de Dogwalk com horários flexíveis</span><span class="text-en hidden">Dog walking services with flexible hours</span><span class="text-es hidden">Servicios de paseo para perros con horarios flexibles</span></li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Carteira de vacinação digital para facilitar o acompanhamento</span><span class="text-en hidden">Digital vaccination card for easy tracking</span><span class="text-es hidden">Cartilla de vacunación digital para un mejor seguimiento</span></li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> <span class="text-pt">Consultoria especializada em saúde pet</span><span class="text-en hidden">Specialized pet health consulting</span><span class="text-es hidden">Consultoría especializada en salud para mascotas</span></li>
         </ul>
 
         <a href="" class="btn btn-dark ms-3">
           <span class="text-pt">Saiba mais sobre nossos serviços</span>
           <span class="text-en hidden">Learn more about our services</span>
+          <span class="text-es hidden">[Descubre más sobre nuestros servicios]</span>
         </a>
+
       </div>
+
       <div class="col-md-6">
         <img src="img/p1/i1.jpg" class="img-fluid rounded" alt="Imagem de pets felizes">
       </div>
+
     </div>
   </section>
 
@@ -101,41 +136,54 @@
       <h2 class="text-center text-uppercase mb-4">
         <span class="text-pt">Nossos Benefícios</span>
         <span class="text-en hidden">Our Benefits</span>
+        <span class="text-es hidden">Nuestros Beneficios</span>
       </h2>
+
       <div class="row text-center">
         <div class="col-md-4">
           <i class="fas fa-heart fa-3x mb-3 benefit-icon"></i>
           <h5 class="mb-3">
             <span class="text-pt">Cuidado e Atenção</span>
             <span class="text-en hidden">Care and Attention</span>
+            <span class="text-es hidden">Cuidado y Atención</span>
           </h5>
+
           <p>
             <span class="text-pt">Nosso time de especialistas garante o melhor cuidado para seu pet.</span>
             <span class="text-en hidden">Our team of specialists ensures the best care for your pet.</span>
+            <span class="text-es hidden">Nuestro equipo de especialistas garantiza el mejor cuidado para tu mascota.</span>
           </p>
         </div>
+
         <div class="col-md-4">
           <i class="fas fa-shield-alt fa-3x mb-3 benefit-icon"></i>
           <h5 class="mb-3">
             <span class="text-pt">Segurança</span>
             <span class="text-en hidden">Safety</span>
+            <span class="text-es hidden">Seguridad</span>
           </h5>
+
           <p>
             <span class="text-pt">Segurança é nossa prioridade em todos os serviços oferecidos.</span>
             <span class="text-en hidden">Safety is our priority in all offered services.</span>
+            <span class="text-es hidden">La seguridad es nuestra prioridad en todos los servicios que ofrecemos.</span>
           </p>
         </div>
+
         <div class="col-md-4">
           <i class="fas fa-paw fa-3x mb-3 benefit-icon"></i>
           <h5 class="mb-3">
             <span class="text-pt">Conforto</span>
             <span class="text-en hidden">Comfort</span>
+            <span class="text-es hidden">Comodidad</span>
           </h5>
           <p>
             <span class="text-pt">Ambientes confortáveis e adequados para o seu animal de estimação.</span>
             <span class="text-en hidden">Comfortable and suitable environments for your pet.</span>
+            <span class="text-es hidden">Ambientes cómodos y adecuados para tu mascota.</span>
           </p>
         </div>
+
       </div>
     </div>
   </section>
@@ -146,7 +194,9 @@
       <h2 class="text-center mb-4">
         <span class="text-pt">Nossos Serviços</span>
         <span class="text-en hidden">Our Services</span>
+        <span class="text-es hidden">Nuestros Servicios</span>
       </h2>
+
       <div class="row text-center">
         <!-- Card 1 -->
         <div class="col-md-4 mb-4">
@@ -157,10 +207,13 @@
                 <h5 class="card-title">
                   <span class="text-pt">Carteira Digital de Vacinação</span>
                   <span class="text-en hidden">Digital Vaccination Card</span>
+                  <span class="text-es hidden">Cartilla Digital de Vacunación</span>
                 </h5>
+
                 <p class="card-text">
                   <span class="text-pt">Mantenha o controle das vacinas do seu pet com nossa carteira digital, garantindo que ele esteja sempre protegido.</span>
                   <span class="text-en hidden">Keep track of your pet's vaccinations with our digital card, ensuring they are always protected.</span>
+                  <span class="text-es hidden">Lleva el control de las vacunas de tu mascota con nuestra cartilla digital, asegurando que siempre esté protegida.</span>
                 </p>
               </div>
             </div>
@@ -176,10 +229,13 @@
                 <h5 class="card-title">
                   <span class="text-pt">Lembrete de Notificações</span>
                   <span class="text-en hidden">Notification Reminder</span>
+                  <span class="text-es hidden">Recordatorio de Notificaciones</span>
                 </h5>
+
                 <p class="card-text">
                   <span class="text-pt">Lembrete é um serviço especializado em notificar os tutores sobre as datas essenciais de vacinação dos seus animais de estimação.</span>
                   <span class="text-en hidden">Reminder is a specialized service to notify guardians about essential vaccination dates for their pets.</span>
+                  <span class="text-es hidden">Este servicio especializado notifica a los tutores sobre las fechas esenciales de vacunación de sus mascotas.</span>
                 </p>
               </div>
             </div>
@@ -195,10 +251,13 @@
                 <h5 class="card-title">
                   <span class="text-pt">Serviço de Dogwalk</span>
                   <span class="text-en hidden">Dog Walking Service</span>
+                  <span class="text-es hidden">Servicio de Paseo para Perros</span>
                 </h5>
+
                 <p class="card-text">
                   <span class="text-pt">Oferecemos passeios personalizados e seguros para o seu pet, com profissionais experientes.</span>
                   <span class="text-en hidden">We offer personalized and safe walks for your pet, with experienced professionals.</span>
+                  <span class="text-es hidden">Ofrecemos paseos personalizados y seguros para tu mascota con profesionales experimentados.</span>
                 </p>
               </div>
             </div>
@@ -214,21 +273,28 @@
       <h2 class="text-uppercase mb-4">
         <span class="text-pt">Quem Somos</span>
         <span class="text-en hidden">Who We Are</span>
+        <span class="text-es hidden">¿Quiénes Somos?</span>
       </h2>
+
       <div class="row">
         <div class="col-md-6">
           <p>
             <span class="text-pt">A Petto é mais do que uma empresa. Somos uma equipe apaixonada por proporcionar saúde, cuidado e diversão para os seus pets. Nosso compromisso é oferecer serviços personalizados como Dogwalk, carteira de vacinação digital e muito mais, sempre priorizando o bem-estar e a felicidade dos animais.</span>
             <span class="text-en hidden">Petto is more than just a company. We are a team passionate about providing health, care, and fun for your pets. Our commitment is to offer personalized services such as Dogwalking, digital vaccination cards, and much more, always prioritizing the well-being and happiness of animals.</span>
+            <span class="text-es hidden">Petto es más que una empresa. Somos un equipo apasionado por proporcionar salud, cuidado y diversión para tus mascotas. Nuestro compromiso es ofrecer servicios personalizados como paseos para perros, cartilla de vacunación digital y mucho más, siempre priorizando el bienestar y la felicidad de los animales.</span>
           </p>
+
           <p>
             <span class="text-pt">Queremos garantir que cada pet receba o carinho e a atenção que merece, facilitando o dia a dia de seus tutores. Junte-se a nós e viva essa experiência!</span>
             <span class="text-en hidden">We want to ensure that every pet receives the love and attention they deserve, making daily life easier for their guardians. Join us and experience this!</span>
+            <span class="text-es hidden">Queremos garantizar que cada mascota reciba el cariño y la atención que merece, facilitando el día a día de sus tutores. ¡Únete a nosotros y vive esta experiencia!</span>
           </p>
         </div>
+
         <div class="col-md-6">
           <img src="img/p1/i5.jpg" alt="Imagem de Pets Felizes" class="img-fluid rounded shadow-sm">
         </div>
+
       </div>
     </div>
   </section>
@@ -239,6 +305,7 @@
       <h2 class="text-center text-uppercase mb-4">
         <span class="text-pt">Para Desenvolvedores</span>
         <span class="text-en hidden">For Developers</span>
+        <span class="text-es hidden">Para Desarrolladores</span>
       </h2>
       <div class="row text-center">
         <div class="col-md-4">
@@ -246,36 +313,49 @@
           <h5 class="mb-3">
             <span class="text-pt">Tecnologias Utilizadas</span>
             <span class="text-en hidden">Technologies Used</span>
+            <span class="text-es hidden">Tecnologías Utilizadas</span>
           </h5>
+
           <p>
             <span class="text-pt">Utilizamos as tecnologias mais modernas como HTML5, CSS3, JavaScript e Bootstrap para criar um site responsivo e dinâmico.</span>
             <span class="text-en hidden">We use the most modern technologies such as HTML5, CSS3, JavaScript, and Bootstrap to create a responsive and dynamic website.</span>
+            <span class="text-es hidden">Utilizamos tecnologías modernas como HTML5, CSS3, JavaScript y Bootstrap para crear un sitio web responsivo y dinámico.</span>
           </p>
         </div>
+        
         <div class="col-md-4">
           <i class="fas fa-cogs fa-3x mb-3 text-dark"></i>
           <h5 class="mb-3">
             <span class="text-pt">Frameworks</span>
             <span class="text-en hidden">Frameworks</span>
+            <span class="text-es hidden">Frameworks</span>
           </h5>
+          
           <p>
             <span class="text-pt">Nossa aplicação é desenvolvida com o suporte de frameworks como Bootstrap para estilização e Font Awesome para ícones.</span>
             <span class="text-en hidden">Our application is developed with the support of frameworks such as Bootstrap for styling and Font Awesome for icons.</span>
+            <span class="text-es hidden">Nuestra aplicación está desarrollada con el soporte de frameworks como Bootstrap para la estilización y Font Awesome para los íconos.</span>
           </p>
         </div>
+
         <div class="col-md-4">
           <i class="fas fa-file-code fa-3x mb-3 text-dark"></i>
           <h5 class="mb-3">
             <span class="text-pt">Documentação</span>
             <span class="text-en hidden">Documentation</span>
+            <span class="text-es hidden">Documentación</span>
           </h5>
+
           <p>
             <span class="text-pt">Acesse a documentação completa para entender melhor a estrutura e funcionamento do nosso site.</span>
             <span class="text-en hidden">Access the complete documentation to better understand the structure and functioning of our website.</span>
+            <span class="text-es hidden">Accede a la documentación completa para entender mejor la estructura y el funcionamiento de nuestro sitio web.</span>
           </p>
+
           <a href="#" class="btn btn-dark mt-3">
             <span class="text-pt">Ver Documentação</span>
             <span class="text-en hidden">View Documentation</span>
+            <span class="text-es hidden">[Ver Documentación]</span>
           </a>
         </div>
       </div>
@@ -288,25 +368,39 @@
   <footer class="bg-dark text-white pt-5">
     <div class="container">
       <div class="row">
+
         <!-- Seção de Serviços -->
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">
             <span class="text-pt">Nossos Serviços</span>
             <span class="text-en hidden">Our Services</span>
+            <span class="text-es hidden">Nuestros Servicios</span>
           </h5>
+
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">
-              <span class="text-pt">Carteira Digital de Vacinação</span>
-              <span class="text-en hidden">Digital Vaccination Card</span>
-            </a></li>
-            <li><a href="#" class="text-white text-decoration-none">
-              <span class="text-pt">Serviço de Dogwalk</span>
-              <span class="text-en hidden">Dog Walking Service</span>
-            </a></li>
-            <li><a href="#" class="text-white text-decoration-none">
-              <span class="text-pt">Consultoria de Saúde Pet</span>
-              <span class="text-en hidden">Pet Health Consultancy</span>
-            </a></li>
+            <li>
+              <a href="#" class="text-white text-decoration-none">
+                <span class="text-pt">Carteira Digital de Vacinação</span>
+                <span class="text-en hidden">Digital Vaccination Card</span>
+                <span class="text-es hidden">Cartilla Digital de Vacunación</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-white text-decoration-none">
+                <span class="text-pt">Serviço de Dogwalk</span>
+                <span class="text-en hidden">Dog Walking Service</span>
+                <span class="text-es hidden">Servicio de Paseo para Perros</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-white text-decoration-none">
+                <span class="text-pt">Consultoria de Saúde Pet</span>
+                <span class="text-en hidden">Pet Health Consultancy</span>
+                <span class="text-es hidden">Consultoría de Salud para Mascotas</span>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -315,17 +409,25 @@
           <h5 class="text-uppercase">
             <span class="text-pt">Contato</span>
             <span class="text-en hidden">Contact</span>
+            <span class="text-es hidden">Contacto</span>
           </h5>
+
           <ul class="list-unstyled">
-            <li><i class="fas fa-envelope me-2"></i>
+            <li>
+              <i class="fas fa-envelope me-2"></i>
               <a href="mailto:contato@petto.com.br" class="text-white text-decoration-none">contato@petto.com.br</a>
             </li>
-            <li><i class="fas fa-phone me-2"></i>
+
+            <li>
+              <i class="fas fa-phone me-2"></i>
               <a href="tel:+551199144-4959" class="text-white text-decoration-none">+55 11 99144-4959</a>
             </li>
-            <li><i class="fas fa-map-marker-alt me-2"></i>
-              <span class="text-pt">Rua Eleodora Cintra, 45 - São Paulo</span>
-              <span class="text-en hidden">Rua Eleodora Cintra, 45 - São Paulo</span>
+
+            <li>
+              <i class="fas fa-map-marker-alt me-2"></i>
+              <span class="text-pt">📍 Rua Eleodora Cintra, 45 - São Paulo</span>
+              <span class="text-en hidden">📍 Rua Eleodora Cintra, 45 - São Paulo</span>
+              <span class="text-es hidden">📍 Rua Eleodora Cintra, 45 - São Paulo</span>
             </li>
           </ul>
         </div>
@@ -335,7 +437,9 @@
           <h5 class="text-uppercase">
             <span class="text-pt">Siga-nos</span>
             <span class="text-en hidden">Follow Us</span>
+            <span class="text-es hidden">Síguenos</span>
           </h5>
+
           <div class="d-flex">
             <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
             <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
@@ -354,6 +458,7 @@
           <p class="mb-0">
             <span class="text-pt">&copy; 2024 Petto - Todos os direitos reservados.</span>
             <span class="text-en hidden">&copy; 2024 Petto - All rights reserved.</span>
+            <span class=";text-es hidden">&copy; 2024 Petto - Todos los derechos reservados.</span>
           </p>
         </div>
       </div>

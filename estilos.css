@@ -42,6 +42,24 @@ p {
   width: 100%;
 }
 
+#flagEn {
+  height: 55px;
+  width: 65px;
+}
+
+#flagEs {
+  height: 55px;
+  width: 65px;
+}
+
+#flagPt {
+  height: 55px;
+  width: 65px;
+}
+
+.hidden { display: none; }
+
+
 
 
 .register {
