@@ -62,6 +62,11 @@ p {
   color: #ffff;
 }
 
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
 .hidden { display: none; }
 
 

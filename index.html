@@ -70,14 +70,27 @@
               <li>
                 <a class="dropdown-item" href="#" onclick="alterarTamanhoTexto(1.1); event.stopPropagation();">A+</a>
               </li>
+
               <li>
                 <a class="dropdown-item" href="#" onclick="alterarTamanhoTexto(0.9); event.stopPropagation();">A-</a>
               </li>
+
               <li>
                 <hr class="dropdown-divider">
               </li>
+
               <li>
-                <a class="dropdown-item" href="#">Outra opção</a>
+                <a class="dropdown-item" href="#">
+                  <span class="text-pt">
+                    <button id="toggle-dark-mode modoEscuro">Modo Escuro</button>
+                  </span>
+                  <span class="text-en hidden">
+                    <button id="modoDark">Dark Mode</button>
+                  </span>
+                  <span class="text-es hidden">
+                    <button id="modoOscuro">Modo oscuro</button>
+                  </span>
+                </a>
               </li>
             </ul>
           </li>

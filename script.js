@@ -48,3 +48,48 @@ function alterarTamanhoTexto(fator) {
         el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * fator) + "px";
     });
 }
+
+
+
+
+
+// toggle-dark-mode modoEscuro
+// FUNÇÃO PARA ATIVAR O MODO ESCURO
+// PEGA OS ELEMENTOS DE BOTÃO E CORPO DO DOCUMENTO(HTML)
+const modoEscuro = document.getElementById('modoEscuro');
+const modoDark = document.getElementById('modoDark');
+const modoOscuro = document.getElementById('modoOscuro');
+const body = document.body;
+
+// FUNÇÃO PARA AUTALIZAR O BOTÃO
+function updateButtonText() {
+    if (body.classList.contains('dark-mode')) {
+        modoEscuro.textContent = 'Modo Claro';  // TROCA O TEXTO DO BOTÃO PARA (Modo Claro)
+    } else {
+        modoEscuro.textContent = 'Modo Escuro'; // TROCA O TEXTO DO BOTÃO PARA (Modo Escuro)
+    }
+}
+
+// VERIFICA SE O MODO ESCURO DA PAGINA ESTÁ ATIVADO
+if (localStorage.getItem('dark-mode') === 'true') {
+    body.classList.add('dark-mode');
+}
+
+// ATUALIZA O TEXTO DO BOTÃO REFERENTE A ESCOLHA DE MODO ESCURO OU CLARO
+updateButtonText();
+
+// ADICIONA EVENTO PARA ALTERNAR ENTRE O MODO ESCURO E O MODO CLARO
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    // SALVA A ESCOLHA DO USUARIO EM LocalStorage, OU SEJA, "ARMAZENA" EM localStorage PARA MANTER A PREFERÊNCIA DO USUARIO
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'true');
+    } else {
+        localStorage.setItem('dark-mode', 'false');
+    }
+
+    // ATUALIZA O TEXTO DO BOTÃO NOVAMENTE, PARA NÃO TER CONFLITOS ENTRE O NOME E O QUE ESTÁ DECRITO NO BOTÃO
+    updateButtonText();
+});
+
